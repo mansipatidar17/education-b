@@ -3,7 +3,7 @@ require("./db/config");
 const User = require("./db/User");
 const cors = require("cors");
 const app = express();
-const port = 80;
+const port = process.env.PORT || 80;
 
 app.use(express.json());
 app.use(cors());
